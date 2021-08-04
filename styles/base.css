@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @font-face {
     font-family: "FastHand-lgBMV";
-    src: url("/fonts/FastHand-lgBMV.ttf");
+    src: url("../fonts/FastHand-lgBMV.ttf");
 }
 
 :root {

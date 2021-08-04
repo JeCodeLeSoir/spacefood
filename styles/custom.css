@@ -46,8 +46,8 @@
 
 .item {
     position: relative;
-    width: 500px;
-    height: 500px;
+    width: 25vw;
+    height: 25vw;
     border-radius: 16px;
     border: 5px solid var(--primary-color);
     margin: 25px;
@@ -64,6 +64,10 @@
 }
 
 .item:hover .state {
+    visibility: visible;
+}
+
+.item:active .state {
     visibility: visible;
 }
 
@@ -392,9 +396,12 @@
     }
 
     .item {
-       
-        width: 500px;
-        height: 300px;
-       
+        width: 45vw;
+        height: 45vw;
+    }
+
+    .item:hover .state
+    {
+        bottom: 25px;
     }
 }
