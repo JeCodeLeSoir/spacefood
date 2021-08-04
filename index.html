@@ -85,9 +85,9 @@
                     <img src="images/food/brinkin.png" alt="brinkin">
                     <p class="level">Legendaire Dore</p>
                     <div class="state">
-                        <p>+20% dégâts au astéroïde</p>
-                        <p>-10% de vitesse</p>
-                        <p>+5% mal au ventre !</p>
+                        <p>+25% dégâts au astéroïde</p>
+                        <p>-5% de vitesse</p>
+                        <p>+15% mal au ventre !</p>
                     </div>
                     <p class="price">12$</p>
                     <a pay="2">Buy</a>
@@ -98,9 +98,9 @@
                     <img src="images/food/frite.png" alt="frite">
                     <p class="level">Legendaire Dore</p>
                     <div class="state">
-                        <p>+20% dégâts au astéroïde</p>
-                        <p>-10% de vitesse</p>
-                        <p>+5% mal au ventre !</p>
+                        <p>+12% dégâts au astéroïde</p>
+                        <p>-20% de vitesse</p>
+                        <p>+2% mal au ventre !</p>
                     </div>
                     <p class="price">12$</p>
                     <a pay="3">Buy</a>
@@ -196,7 +196,7 @@
             facture.classList.remove('facture-Open');
         })
 
-         items.forEach((element)=>{
+        items.forEach((element)=>{
             element.addEventListener('click', (event)=>{
                 event.preventDefault();
                 facture.classList.add('facture-Open');
@@ -213,7 +213,7 @@
                         break;
                 }
              })
-         })
+        })
          
     </script>
 </body>
