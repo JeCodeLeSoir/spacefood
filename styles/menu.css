@@ -1,0 +1,113 @@
+/*
+<nav class="menu">
+*/
+
+.menu{
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    background-color: var(--primary-background-color);
+    width:100%;
+    height:var(--nav-height);
+    text-align: center;
+
+    user-select: none;
+
+    z-index: 99999;
+}
+
+.menu h1{
+    font-size: 2vw;
+    color: var(--primary-color);
+    margin-left: 2vw;
+
+    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+    animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+/*
+.menu h1:hover{
+    -webkit-animation: none;
+    -moz-animation: none;
+    animation: none;
+}
+*/
+
+@-webkit-keyframes neon1 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #c73a77,
+        0 0 70px #c73a77, 0 0 80px #c73a77, 0 0 100px #c73a77, 0 0 150px #c73a77;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #c73a77,
+        0 0 35px #c73a77, 0 0 40px #c73a77, 0 0 50px #c73a77, 0 0 75px #c73a77;
+    }
+  }
+
+.menu > ul{
+    display: inline-block;
+    list-style:none;
+    margin-left: 10vw;
+
+    height: 100%;
+}
+
+.menu > ul > li{
+   display: inline-block;
+   margin-left: 1vw;
+   height: 100%;
+
+   line-height:var(--nav-height);
+}
+
+.menu > ul > li > a{
+    font-size: 2vw;
+    cursor: pointer;
+
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.menu > ul > li > a:hover{
+    color: var(--primary-color);
+}
+
+.flag
+{
+    font-size: 2vw;
+    color: white;
+}
+
+.flag a{
+    margin: 0 0.5vw;
+    font-size: 0.8vw !important;
+    text-transform: uppercase;
+
+    line-height:var(--nav-height) - 25px; 
+}
+
+.flag a img{
+   height: 50%;
+}
+
+@media screen and (max-width: 500px) {
+    .menu h1{
+        font-size: 4vw;
+    }
+    
+    .flag a img{
+        height: 25%;
+    }
+
+     .menu > ul > li > a{
+        font-size: 3vw;
+     }
+}
+
+
+.header-space{
+    display: block;
+    width: 100%;
+    height: var(--nav-height);
+}

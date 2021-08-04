@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <title>Space food</title>
+
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/article.css">
+
+    <link rel="stylesheet" href="styles/base.css">
+
+    <link rel="stylesheet" href="styles/custom.css">
+    <link rel="stylesheet" href="styles/footer.css">
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>🍔</text></svg>">
+</head>
+
+<body>
+    <header class="header">
+        <img src="/images/food/foodinspace.jpg" alt="un déssin d'un astaunote avec un he">
+    </header>
+
+    <nav class="menu">
+        <h1>Space Food</h1>
+        <ul id="menus">
+            <li><a href="index.html#contact">About</a></li>
+
+            <li><a href="#Shop">Shop</a></li>
+            <li><a href="#contact">Contact</a></li>
+           
+        </ul>
+    </nav>
+    
+    <div class="header-space"></div>
+
+    <article class="article-box">
+        <div class="content" id="about">
+            <h1>About <span class="after"></span></h1>
+
+            <div class="About">
+            <img src="/images/121656346-femme-astronaute-exploration-spatiale-pop-art-retro-vector-illustration-kitsch-vintage-des-années-50.jpg"
+            
+            alt="un déssin d'une astaunote qui leve le doig"
+            >
+            <p>
+
+                <h2>Qu'est-ce que Space Food ?</h2>
+                <p>Space Food est un service de livraison de nourriture qui vise à fournir un moyen simple et efficace de livrer de la nourriture aux personnes dans l'espace.
+                    Il s'agit d'une application Web qui permet aux utilisateurs de commander des aliments à partir d'une liste d'aliments disponibles.
+                    La nourriture est ensuite livrée aux utilisateurs via une interface simple.
+               
+                    L'interface est composée d'une liste d'aliments qui peut être filtrée par type, prix, etc.
+                    L'utilisateur peut alors sélectionner l'aliment et la date de livraison.
+                </p>
+            </div>
+        </div>
+    </article>
+
+    <article class="article-box">
+
+        <div class="content">
+            <h1>Shop <span class="after"></span></h1>
+            <div class="list" id="Shop">
+                
+                
+                <div class="item">
+                    <img src="/images/food/Burger.png" alt="Burger">
+                    <p class="level">Legendaire Dore</p>
+                    <div class="state">
+                        <p>+20% dégâts au astéroïde</p>
+                        <p>-10% de vitesse</p>
+                        <p>+5% mal au ventre !</p>
+                    </div>
+                    <p class="price">12$</p>
+                    <a pay="1">Buy</a>
+                </div>
+                
+
+                <div class="item">
+                    <img src="/images/food/brinkin.png" alt="brinkin">
+                    <p class="level">Legendaire Dore</p>
+                    <div class="state">
+                        <p>+20% dégâts au astéroïde</p>
+                        <p>-10% de vitesse</p>
+                        <p>+5% mal au ventre !</p>
+                    </div>
+                    <p class="price">12$</p>
+                    <a pay="2">Buy</a>
+                </div>
+
+
+                <div class="item">
+                    <img src="/images/food/frite.png" alt="frite">
+                    <p class="level">Legendaire Dore</p>
+                    <div class="state">
+                        <p>+20% dégâts au astéroïde</p>
+                        <p>-10% de vitesse</p>
+                        <p>+5% mal au ventre !</p>
+                    </div>
+                    <p class="price">12$</p>
+                    <a pay="3">Buy</a>
+                </div>
+
+            </div>
+        </div>
+    </article>
+
+    <article class="article-box">
+
+        <div class="content" id="contact">
+            <h1>Contact <span class="after"></span></h1>
+            <div class="Contact">
+                <form method="POST">
+
+                    <p>
+                        Si vous avais perdu votre Hamburger dans l'espace, vous pouvez contacter le service client.
+                    </p>
+
+                    <label for="nameinput" >Votre Prenom & Nom famile</label>
+                    <input id="nameinput" type="text" name="name" placeholder="Name">
+
+                    <label for="Email" >Votre Email</label>
+                    <input id="Email" type="text" name="email" placeholder="Email">
+
+                    <label for="message" >Votre Message</label>
+                    <textarea id="message" name="message" placeholder="011000111100001"></textarea>
+
+                    <input type="submit" value="📡">
+                </form>
+            </div>
+        </div>
+
+    </article>
+
+    <div class="facture">
+        <div class="header">
+                <h1>Facture</h1>
+                <a class="close">Close</a>
+        </div>
+        <div class="content">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Test</td>
+                        <td>50$</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Total:</td>
+                        <td>50$</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <div class="payment">
+                 <a><img src="/ico/paypal.svg"></a>
+                 <a><img src="/ico/visa.svg"></a>
+                 <a><img src="/ico/mastercard.svg"></a>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <footer class="footer">
+        <p>&copy; JeCodeLeSoir</p>
+
+        <ul id="menus">
+            <img src="/images/fusé.png" alt="photo de fusé !">
+
+            <li><a href="#about">About</a></li>
+            <li><a href="#Shop">Shop</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </footer>
+
+    <script>
+         const items = document.querySelectorAll('#Shop .item a')
+         const facture = document.querySelector('.facture')
+         const _close = document.querySelector('.facture .close')
+
+
+         const facture_tbody = document.querySelector('.facture .content tbody')
+        
+        _close.addEventListener('click', (event)=>{
+            facture.classList.remove('facture-Open');
+        })
+
+         items.forEach((element)=>{
+            element.addEventListener('click', (event)=>{
+                event.preventDefault();
+                facture.classList.add('facture-Open');
+
+                switch(element.getAttribute('pay')){
+                    case '1':
+                    facture_tbody.innerHTML = '<td>Test</td><td>100$</td>'
+                        break;
+                        case '2':
+                    facture_tbody.innerHTML = '<td>Test</td><td>200$</td>'
+                        break;
+                        case '3':
+                    facture_tbody.innerHTML = '<td>Test</td><td>1000$</td>'
+                        break;
+                }
+             })
+         })
+         
+    </script>
+</body>
+
+</html>

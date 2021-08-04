@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@font-face {
+    font-family: "FastHand-lgBMV";
+    src: url("/fonts/FastHand-lgBMV.ttf");
+}
+
+:root {
+    --primary-color: #ff00f2;
+    --secondary-color: #0092a5;
+    --secondary-dark-color: #00373f;
+    --tertiary-color: #000011;
+    --quaternary-color: #0f0f2f;
+    --nav-height: 60px;
+    --primary-background-color: var(--tertiary-color);
+    --secondary-background-color: var(--quaternary-color);
+    --font: "FastHand-lgBMV", sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: var(--font);
+    background-color: var(--secondary-background-color);
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    display: inline-block;
+    width: fit-content;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--primary-background-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--secondary-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color);
+}
+
+hr {
+    border-color: var(--primary-color);
+}

@@ -1,0 +1,393 @@
+.About {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.About img {
+    border-radius: 16px;
+    width: 40%;
+    margin-top: 15px;
+}
+
+.About h2 {
+    color: var(--primary-color);
+    text-shadow: white 0px 0px 10px;
+}
+
+.About p {
+    color: var(--primary-color);
+    font-size: 25px;
+    width: 60%;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (max-width: 500px) {
+    .About p {
+        width: 80%;
+    }
+    .About img {
+        width: 80%;
+        margin-top: 15px;
+    }
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: auto;
+}
+
+.item {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border-radius: 16px;
+    border: 5px solid var(--primary-color);
+    margin: 25px;
+    z-index: 1;
+}
+
+.item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+}
+
+.item:hover .state {
+    visibility: visible;
+}
+
+.item .level {
+    position: absolute;
+    color: yellow;
+    transform: rotateZ(-25deg);
+    font-size: 0.9vw;
+    left: -2vw;
+    top: -1vw;
+    text-align: center;
+    text-shadow: black 0px 0px 10px;
+}
+
+.item .state {
+    visibility: hidden;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #00000081;
+    color: var(--secondary-color);
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: black 0px 0px 10px;
+    font-size: 20px;
+}
+
+.item .state p {
+    padding: 0;
+    margin: 0;
+}
+
+.item .price {
+    position: absolute;
+    color: green;
+    font-size: 3vw;
+    z-index: 1;
+    bottom: 0;
+    margin: 10px;
+    padding: 0;
+}
+
+.item a {
+    position: absolute;
+    background-color: var(--secondary-dark-color);
+    color: var(--primary-color);
+    font-size: 2vw;
+    z-index: 1;
+    bottom: 0;
+    margin: 5px;
+    padding: 2px 25px;
+    right: 0;
+    text-decoration: none;
+    border-radius: 16px;
+}
+
+.item a:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.Contact {
+    min-height: 100vh;
+}
+
+.Contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.Contact p {
+    width: 50%;
+    color: var(--primary-color);
+    text-shadow: black 0px 0px 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    text-align: left;
+}
+
+.Contact input[type="text"] {
+    width: 50%;
+    height: 50px;
+    font-size: 25px;
+    margin: 15px;
+    outline: 0;
+    padding: 15px;
+    border-radius: 8px;
+    border: 0;
+}
+
+.Contact textarea {
+    width: 50%;
+    height: 200px;
+    padding: 15px;
+    outline: 0;
+    font-size: 25px;
+    border-radius: 8px;
+    border: 0;
+    margin: 15px;
+}
+
+.Contact label {
+    color: var(--primary-color);
+    text-shadow: black 0px 0px 10px;
+}
+
+.Contact input[type="submit"] {
+    width: 30%;
+    height: 50px;
+    font-size: 25px;
+    margin: 15px;
+    border-radius: 8px;
+    border: 0;
+    font-size: 1.5vw;
+}
+
+.facture {
+
+    background-color: var(--secondary-background-color);
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+
+    width: 75%;
+    height: 75%;
+
+    transform: translate(-50%, -50%);
+
+    z-index: 99999;
+
+    display: grid;
+    grid-template-rows: 1fr 10fr;
+    grid-template-columns: 100%;
+
+    padding: 5px;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 8px;
+
+    border: 2px solid var(--primary-color);
+
+    display: none;
+
+    color: var(--primary-color);
+}
+
+.facture-Open{
+    display: grid;
+}
+
+.facture .header{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    width: 100%;
+    height: 50px;
+
+    text-align: center;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.facture .header h1{
+    text-align: center;
+    width: 100%;
+    margin-top: 35px;
+}
+
+.facture .header a{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 35px;
+
+    background-color: white;
+    border-radius: 8px;
+
+    cursor: pointer;;
+    padding: 10px 0;
+
+    font-size: 1.5vw;
+}
+
+.facture > .content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.facture > .content > table{
+   
+    display: grid;
+    grid-template-rows: 1fr 5fr 1fr;
+
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+    
+}
+
+.facture > .content > table > thead > tr{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+
+    align-items: center;
+
+    font-size: 2vw;
+}
+
+.facture > .content > table > thead > tr > th{
+    display: block;
+    border: 2px solid var(--primary-color);
+}
+
+.facture > .content > table > tbody{
+    background-color: rgba(0, 0, 0, 0.808);
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+
+    border: 2px solid var(--primary-color);
+
+   
+}
+
+.facture > .content > table > tbody> tr {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    
+}
+
+.facture > .content > table > tbody > tr > td{
+    border: 2px solid var(--primary-color);
+    padding: 5px;
+}
+
+.facture > .content > table > tfoot > tr {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+}
+
+.facture > .content > table > tfoot > tr td{
+    border: 2px solid var(--primary-color);
+}
+
+.facture > .content > table > tfoot > tr td:nth-child(1){ 
+    grid-column: 3;
+}
+
+.facture > .content > .payment{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 25%);
+    grid-template-rows: repeat(4, 25%);
+    padding: 15px;
+
+    grid-gap: 15px;
+
+    margin-left: 40px;
+}
+
+.facture > .content > .payment a{
+    grid-row: 3;
+}
+
+.facture > .content > .payment a img{
+    width: 8vw;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 1000px) {
+    .Contact p {
+        width: 100%;
+    }
+    .Contact input[type="text"] {
+        width: 100%;
+    }
+    .Contact textarea {
+        width: 100%;
+        height: 400px !important;
+    }
+    .Contact input[type="submit"] {
+        width: 50%;
+        height: 100px;
+        font-size: 25px;
+    }
+
+    .facture {
+        width: 100%;
+    }
+
+    .facture > .content{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .facture > .content > .payment a img{
+        width: 15vw;
+    }
+    
+    .facture > .content > .payment{
+        margin-top: 35px;
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: repeat(3, 25%);
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .facture > .content > .payment a{
+        grid-row: inherit;
+    }
+}

@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /ico/
+Disallow: /images/
+Disallow: /fonts/
+Allow: /index.html

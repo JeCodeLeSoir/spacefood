@@ -1,0 +1,44 @@
+body > .header{
+  display: inline-block;
+  width: 100%;
+  height: 100vh;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+body > .header img{
+  width: 100%;
+  height: 100vh;
+
+  object-fit: cover;
+
+  position: relative;
+
+  z-index: 0;
+}
+
+body > .header::before{
+
+  content: '';
+	position: absolute;
+  display: block;
+	top: -50%;
+
+	left: -100%;
+	height: 200%;
+  width: 25%;
+
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,.4), transparent);
+   
+  z-index: 1;
+
+  transform: rotateZ(36deg);
+}
+
+body > .header:hover::before{
+
+  left: 150%;
+  transition: 4s cubic-bezier(0,1.45,1,.24);
+}
